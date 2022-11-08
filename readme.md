@@ -1,6 +1,11 @@
 # backstageeditapp
 > 管理后台可视化编辑系统
 
+## 环境
+
+node v18.12.1
+
+npm  v8.19.2
 
 ## 目录结构
 
