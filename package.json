@@ -1,0 +1,14 @@
+{
+  "name": "backstageeditapp",
+  "version": "1.0.0",
+  "description": " 管理后台可视化编辑系统",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bohai",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
