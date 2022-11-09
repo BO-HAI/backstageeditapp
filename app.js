@@ -1,20 +1,20 @@
 /*
  * @Author: BoHai
  * @Date: 2022-11-07 18:13:47
- * @LastEditTime: 2022-11-08 14:18:30
+ * @LastEditTime: 2022-11-09 10:12:29
  * @LastEditors: BoHai
  * @Description: 
- * @FilePath: /backstageEditApp/app.js
+ * @FilePath: /backstageeditapp/app.js
  */
 var express = require('express');
 var app = express();
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use('/public', express.static('public'));
+app.use(express.static(__dirname + '/dist'));
 
 app.get('/index.html', function (req, res) {
-	res.sendFile( __dirname + "/views/" + "index.html" );
+	res.sendFile( __dirname + "/index.html" );
 })
  
 app.post('/process_post', function (req, res) {
